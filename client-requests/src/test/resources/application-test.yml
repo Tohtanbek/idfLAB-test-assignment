@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    username: test
+    password: test
+
+  liquibase:
+    change-log: file:C:\Docs\Java Projects\idfLAB-banking-api\common-resources\db\changelog\db.changelog-master.yaml
+

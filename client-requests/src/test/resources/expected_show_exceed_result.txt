@@ -1,0 +1,21 @@
+[ {
+  "accountFrom" : 123,
+  "accountTo" : 9999999999,
+  "expenseCategory" : "PRODUCT",
+  "sum" : 10000.45,
+  "currency_shortname" : "KZT",
+  "datetime" : "2024-04-05 06:00:00+06",
+  "limit_sum" : 1000.0,
+  "limit_datetime" : "2024-03-03 20:00:00Z",
+  "limit_currency_shortname" : "USD"
+}, {
+  "accountFrom" : 123,
+  "accountTo" : 9999999999,
+  "expenseCategory" : "PRODUCT",
+  "sum" : 10000.45,
+  "currency_shortname" : "RUB",
+  "datetime" : "2024-04-03 20:00:00+06",
+  "limit_sum" : 1000.0,
+  "limit_datetime" : "2024-03-03 20:00:00Z",
+  "limit_currency_shortname" : "USD"
+} ]

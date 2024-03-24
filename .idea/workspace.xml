@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9421e52f-dd13-4d40-b946-3505365a39e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/ApplicationRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/dto/DebitTrDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/dto/ExchangeRateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/enums/ExpenseCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/spring/config/BeanConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/spring/config/GeneralConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/spring/jpa/entity/DebitTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/spring/jpa/entity/ExchangeRate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/spring/jpa/entity/ProductMonthlyLimit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/spring/jpa/entity/ServiceMonthlyLimit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/spring/jpa/repository/DebitTrRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/spring/jpa/repository/ExchangeRateRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/spring/jpa/repository/ProductMonthlyLimitRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/spring/jpa/repository/ServiceMonthlyLimitRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/spring/rest/controller/DebitTrController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/spring/rest/feign/ExchangeClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/spring/service/DebitTrService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/spring/service/ExchangeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/util/exchange/DailyExchangeLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/util/json_deserializer/CurrencyDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/util/json_deserializer/OffsetDateTimeDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/util/json_deserializer/ProductDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/java/com/tosDev/util/mapstruct/MapStructMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/test/java/integration/config/IntegrationTestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/test/java/integration/tests/DebitTrControllerIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/test/java/integration/tests/DebitTrControllerServiceIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/test/java/integration/tests/ExchangeServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/test/java/integration/tests/FeignRatesLoaderIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/test/java/integration/tests/LimitRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/test/java/integration/tests/ScheduledTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/test/java/unit/DailyExchangeLoaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/test/java/unit/DebitTrServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/test/java/unit/MapStructTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/test/resources/api_tree_test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-transactions/src/test/resources/application-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/src/main/java/com/tosDev/ApplicationRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/src/main/java/com/tosDev/dto/ExceedTransactionDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/src/main/java/com/tosDev/spring/config/BeanConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/src/main/java/com/tosDev/spring/rest/controller/ClientLimitController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/src/main/java/com/tosDev/spring/service/ClientLimitsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/src/main/java/com/tosDev/util/UtcConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/src/main/java/com/tosDev/util/json_serializer/CurrencySerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/src/main/java/com/tosDev/util/json_serializer/OffsetDateTimeSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/src/main/java/com/tosDev/util/mapstruct/MapStructMapperClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/src/test/java/integration/config/IT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/src/test/java/integration/config/IntegrationTestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/src/test/java/integration/tests/ClientLimitsControllerServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/src/test/java/unit/DateTimeConverterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/src/test/java/unit/MapStructTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/src/test/resources/application-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-requests/src/test/resources/expected_show_exceed_result.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-resources/db/changelog/db.changelog-1.0.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-resources/db/changelog/db.changelog-1.1.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lombok.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2dzO0vGTirAHQaRiy9TehETCewh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Docs/Java Projects/idfLAB-banking-api/client-requests/src/test/resources",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "spring.configuration.checksum": "d0f03b335e37d363ba72ae5a9c177e40"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Docs\Java Projects\idfLAB-banking-api\client-requests\src\test\resources" />
+      <recent name="C:\Docs\Java Projects\idfLAB-banking-api\common-resources\db\changelog" />
+      <recent name="C:\Docs\Java Projects\idfLAB-banking-api" />
+      <recent name="C:\Docs\Java Projects\idfLAB-banking-api\client-requests\src\main\java\com\tosDev\spring\jpa\entities" />
+      <recent name="C:\Docs\Java Projects\idfLAB-banking-api\banking-transactions\src\main\java\com\tosDev\spring" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Docs\Java Projects\idfLAB-banking-api\common-resources" />
+      <recent name="C:\Docs\Java Projects\idfLAB-banking-api\db" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="unit" />
+      <recent name="integration.tests" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tosDev.util.json_serializer" />
+      <recent name="com.tosDev.util.mapstruct" />
+      <recent name="integration.tests" />
+      <recent name="" />
+      <recent name="com.tosDev.spring.jpa.repository" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ApplicationRunner">
+    <configuration name="ClientLimitsControllerServiceTest.checkShowExceedRows" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="client-requests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="integration.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="integration.tests" />
+      <option name="MAIN_CLASS_NAME" value="integration.tests.ClientLimitsControllerServiceTest" />
+      <option name="METHOD_NAME" value="checkShowExceedRows" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapStructTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="client-requests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unit" />
+      <option name="MAIN_CLASS_NAME" value="unit.MapStructTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationRunner (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="banking-transactions" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tosDev.ApplicationRunner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tosDev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationRunner" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="client-requests" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tosDev.ApplicationRunner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tosDev.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="docker-compose.yml.postgres: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="postgres" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ApplicationRunner" />
+        <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
+        <item itemvalue="JUnit.ClientLimitsControllerServiceTest.checkShowExceedRows" />
+        <item itemvalue="Spring Boot.ApplicationRunner (1)" />
+        <item itemvalue="JUnit.MapStructTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9421e52f-dd13-4d40-b946-3505365a39e8" name="Changes" comment="" />
+      <created>1711007228903</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711007228903</updated>
+      <workItem from="1711007231987" duration="15240000" />
+      <workItem from="1711027963068" duration="111000" />
+      <workItem from="1711028115801" duration="53225000" />
+      <workItem from="1711153692889" duration="34000" />
+      <workItem from="1711186888076" duration="45832000" />
+      <workItem from="1711273673674" duration="16115000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

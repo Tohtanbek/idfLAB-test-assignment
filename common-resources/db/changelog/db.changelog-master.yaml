@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: file:C:\Docs\Java Projects\idfLAB-banking-api\common-resources\db\changelog\db.changelog-1.0.sql
+  - include:
+      file: file:C:\Docs\Java Projects\idfLAB-banking-api\common-resources\db\changelog\db.changelog-1.1.sql
