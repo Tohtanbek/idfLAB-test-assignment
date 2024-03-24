@@ -1,10 +1,10 @@
 package integration.tests;
 
-import com.tosDev.ApplicationRunner;
-import com.tosDev.spring.jpa.entity.ProductMonthlyLimit;
-import com.tosDev.spring.jpa.entity.ServiceMonthlyLimit;
-import com.tosDev.spring.jpa.repository.ProductMonthlyLimitRepository;
-import com.tosDev.spring.jpa.repository.ServiceMonthlyLimitRepository;
+import com.tosDev.tr.ApplicationRunner;
+import com.tosDev.tr.spring.jpa.entity.ProductMonthlyLimit;
+import com.tosDev.tr.spring.jpa.entity.ServiceMonthlyLimit;
+import com.tosDev.tr.spring.jpa.repository.ProductMonthlyLimitRepository;
+import com.tosDev.tr.spring.jpa.repository.ServiceMonthlyLimitRepository;
 import integration.config.IntegrationTestBase;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

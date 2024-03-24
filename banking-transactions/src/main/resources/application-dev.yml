@@ -1,3 +1,11 @@
-open_exchange:
-  api:
-    key: d2f862fb1f0f434bb416d8582d13a25b
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:1111/test
+    username: test
+    password: 12345
+  jpa:
+    hibernate:
+      ddl-auto: none
+  liquibase:
+    change-log: file:C:\Docs\Java Projects\idfLAB-banking-api\common-resources\db\changelog\db.changelog-master.yaml

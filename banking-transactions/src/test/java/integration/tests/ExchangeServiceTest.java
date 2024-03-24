@@ -1,9 +1,9 @@
 package integration.tests;
 
-import com.tosDev.ApplicationRunner;
-import com.tosDev.dto.ExchangeRateDto;
-import com.tosDev.spring.jpa.repository.ExchangeRateRepository;
-import com.tosDev.spring.service.ExchangeService;
+import com.tosDev.tr.ApplicationRunner;
+import com.tosDev.tr.dto.ExchangeRateDto;
+import com.tosDev.tr.spring.jpa.repository.ExchangeRateRepository;
+import com.tosDev.tr.spring.service.ExchangeService;
 import integration.config.IntegrationTestBase;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

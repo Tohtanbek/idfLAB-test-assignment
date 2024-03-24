@@ -1,13 +1,13 @@
 package unit;
 
-import com.tosDev.dto.DebitTrDto;
-import com.tosDev.dto.ExchangeRateDto;
-import com.tosDev.enums.ExpenseCategory;
-import com.tosDev.spring.config.BeanConfig;
-import com.tosDev.spring.jpa.entity.DebitTransaction;
-import com.tosDev.spring.jpa.entity.ExchangeRate;
-import com.tosDev.util.mapstruct.MapStructMapper;
-import com.tosDev.util.mapstruct.MapStructMapperImpl;
+import com.tosDev.tr.dto.DebitTrDto;
+import com.tosDev.tr.dto.ExchangeRateDto;
+import com.tosDev.tr.enums.ExpenseCategory;
+import com.tosDev.tr.spring.config.BeanConfig;
+import com.tosDev.tr.spring.jpa.entity.DebitTransaction;
+import com.tosDev.tr.spring.jpa.entity.ExchangeRate;
+import com.tosDev.tr.util.mapstruct.MapStructMapper;
+import com.tosDev.tr.util.mapstruct.MapStructMapperImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,29 +1,21 @@
 package integration.tests;
 
-import com.tosDev.ApplicationRunner;
-import com.tosDev.enums.ExpenseCategory;
-import com.tosDev.spring.config.BeanConfig;
-import com.tosDev.spring.jpa.entity.DebitTransaction;
-import com.tosDev.spring.jpa.entity.ExchangeRate;
-import com.tosDev.spring.jpa.entity.ProductMonthlyLimit;
-import com.tosDev.spring.jpa.entity.ServiceMonthlyLimit;
-import com.tosDev.spring.jpa.repository.DebitTrRepository;
-import com.tosDev.spring.jpa.repository.ExchangeRateRepository;
-import com.tosDev.spring.jpa.repository.ProductMonthlyLimitRepository;
-import com.tosDev.spring.jpa.repository.ServiceMonthlyLimitRepository;
-import com.tosDev.util.exchange.DailyExchangeLoader;
-import com.tosDev.util.json_deserializer.OffsetDateTimeDeserializer;
-import com.tosDev.util.json_serializer.OffsetDateTimeSerializer;
-import com.tosDev.util.mapstruct.MapStructMapper;
-import com.tosDev.util.mapstruct.MapStructMapperImpl;
+import com.tosDev.tr.ApplicationRunner;
+import com.tosDev.tr.enums.ExpenseCategory;
+import com.tosDev.tr.spring.jpa.entity.DebitTransaction;
+import com.tosDev.tr.spring.jpa.entity.ProductMonthlyLimit;
+import com.tosDev.tr.spring.jpa.entity.ServiceMonthlyLimit;
+import com.tosDev.tr.spring.jpa.repository.DebitTrRepository;
+import com.tosDev.tr.spring.jpa.repository.ProductMonthlyLimitRepository;
+import com.tosDev.tr.spring.jpa.repository.ServiceMonthlyLimitRepository;
+import com.tosDev.tr.util.exchange.DailyExchangeLoader;
+import com.tosDev.tr.util.mapstruct.MapStructMapperImpl;
 import integration.config.IntegrationTestBase;
-import jdk.jfr.ContentType;
 import lombok.AllArgsConstructor;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.skyscreamer.jsonassert.JSONAssert;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -34,21 +26,16 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.time.LocalDateTime;
-import java.time.OffsetDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 

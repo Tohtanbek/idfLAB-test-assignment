@@ -12,7 +12,11 @@ spring:
     default-property-inclusion: non_empty
     property-naming-strategy: SNAKE_CASE
 
+  profiles:
+    active: dev
+
 server:
   servlet:
     encoding:
       charset: UTF-8
+  port: 8080

@@ -1,17 +1,15 @@
 package integration.tests;
 
-import com.tosDev.ApplicationRunner;
-import com.tosDev.enums.ExpenseCategory;
-import com.tosDev.spring.jpa.entity.DebitTransaction;
-import com.tosDev.spring.jpa.entity.ExchangeRate;
-import com.tosDev.spring.jpa.repository.DebitTrRepository;
-import com.tosDev.spring.jpa.repository.ExchangeRateRepository;
+import com.tosDev.tr.ApplicationRunner;
+import com.tosDev.tr.enums.ExpenseCategory;
+import com.tosDev.tr.spring.jpa.entity.DebitTransaction;
+import com.tosDev.tr.spring.jpa.entity.ExchangeRate;
+import com.tosDev.tr.spring.jpa.repository.DebitTrRepository;
+import com.tosDev.tr.spring.jpa.repository.ExchangeRateRepository;
 import integration.config.IntegrationTestBase;
 import lombok.AllArgsConstructor;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;

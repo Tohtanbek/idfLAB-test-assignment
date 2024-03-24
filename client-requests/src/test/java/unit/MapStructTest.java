@@ -1,13 +1,13 @@
 package unit;
 
-import com.tosDev.dto.ExceedTransactionDto;
-import com.tosDev.enums.ExpenseCategory;
-import com.tosDev.spring.config.BeanConfig;
-import com.tosDev.spring.jpa.entity.DebitTransaction;
-import com.tosDev.spring.jpa.entity.ProductMonthlyLimit;
-import com.tosDev.spring.jpa.entity.ServiceMonthlyLimit;
-import com.tosDev.util.mapstruct.MapStructMapperClient;
-import com.tosDev.util.mapstruct.MapStructMapperClientImpl;
+import com.tosDev.client.dto.ExceedTransactionDto;
+import com.tosDev.tr.enums.ExpenseCategory;
+import com.tosDev.tr.spring.config.BeanConfig;
+import com.tosDev.tr.spring.jpa.entity.DebitTransaction;
+import com.tosDev.tr.spring.jpa.entity.ProductMonthlyLimit;
+import com.tosDev.tr.spring.jpa.entity.ServiceMonthlyLimit;
+import com.tosDev.client.util.mapstruct.MapStructMapperClient;
+import com.tosDev.client.util.mapstruct.MapStructMapperClientImpl;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

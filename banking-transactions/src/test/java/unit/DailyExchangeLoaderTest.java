@@ -2,14 +2,12 @@ package unit;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.tosDev.dto.ExchangeRateDto;
-import com.tosDev.spring.rest.feign.ExchangeClient;
-import com.tosDev.spring.service.ExchangeService;
-import com.tosDev.util.exchange.DailyExchangeLoader;
-import org.assertj.core.api.Assertions;
+import com.tosDev.tr.dto.ExchangeRateDto;
+import com.tosDev.tr.spring.rest.feign.ExchangeClient;
+import com.tosDev.tr.spring.service.ExchangeService;
+import com.tosDev.tr.util.exchange.DailyExchangeLoader;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
 import java.io.BufferedReader;
@@ -18,9 +16,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.lang.reflect.ParameterizedType;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 import java.util.Currency;
 import java.util.List;
 
@@ -56,7 +52,7 @@ class DailyExchangeLoaderTest {
     @Test
     void mapJsonNodeToDtoList() throws ClassNotFoundException, NoSuchMethodException, IOException, InvocationTargetException, IllegalAccessException {
         ClassLoader classLoader = ClassLoader.getSystemClassLoader();
-        Class<?> clazz = classLoader.loadClass("com.tosDev.util.exchange.DailyExchangeLoader");
+        Class<?> clazz = classLoader.loadClass("com.tosDev.tr.util.exchange.DailyExchangeLoader");
         Method mapJsonToDtoListMethod =
                 clazz.getDeclaredMethod("mapJsonNodeToDtoList", JsonNode.class);
         mapJsonToDtoListMethod.setAccessible(true);

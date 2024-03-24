@@ -1,11 +1,9 @@
 package integration.tests;
 
-import com.tosDev.spring.config.GeneralConfig;
-import com.tosDev.spring.rest.feign.ExchangeClient;
-import org.junit.jupiter.api.Assertions;
+import com.tosDev.tr.spring.config.GeneralConfig;
+import com.tosDev.tr.spring.rest.feign.ExchangeClient;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;

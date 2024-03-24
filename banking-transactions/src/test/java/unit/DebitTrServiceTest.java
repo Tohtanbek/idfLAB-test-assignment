@@ -1,11 +1,7 @@
 package unit;
 
-import com.tosDev.spring.jpa.entity.ExchangeRate;
-import com.tosDev.spring.service.DebitTrService;
-import org.junit.jupiter.api.Assertions;
+import com.tosDev.tr.spring.jpa.entity.ExchangeRate;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
